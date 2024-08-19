@@ -4,29 +4,192 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- slick css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!--jQuery-->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- slick js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <title>vodiy Marketplace</title>
+    <script
+      src="https://kit.fontawesome.com/6e0808d909.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header>
+    <header class="site-header">
       <div class="container">
-        <div>
-          <nav>
-            <div class="top-wrap">
-              <div class="left-content">
-                <img src="images/header/GPS.svg" alt="" width="9" height="12" />
-                <p class="location-text">Ташкент</p>
-                <p class="language-text">UZS</p>
-                <img src="./images/header/down-icon.svg" alt="" />
-              </div>
+        <nav>
+          <div class="top-wrap">
+            <div class="left-content">
+              <img src="images/header/GPS.svg" alt="" width="9" height="12" />
+              <p class="location-text">Ташкент</p>
+              <p class="language-text">UZS</p>
+              <img src="./images/header/down-icon.svg" alt="" />
             </div>
-            <div class=""></div>
-            <div class=""></div>
-          </nav>
-        </div>
+            <div class="right-content">
+              <p>Поддержка</p>
+              <p>Доставка</p>
+              <p>Гарантия</p>
+            </div>
+          </div>
+          <div class="middle-wrap">
+            <div class="content-wrap">
+              <img
+                src="./images/header/site-logo.svg"
+                alt=""
+                width="153"
+                height="55"
+              />
+              <form>
+                <input type="text" placeholder="Поиск" />
+                <button>Найти</button>
+                <i class="fas fa-search"></i>
+                <img
+                  src="images/header/camera-rotate.svg"
+                  alt=""
+                  width="21"
+                  height="16"
+                />
+              </form>
+            </div>
+            <div class="right-wrap">
+              <ul class="middle-list">
+                <li class="middle-item">
+                  <img
+                    src="images/header/world-icon.svg"
+                    alt=""
+                    width="28"
+                    height="28"
+                  />
+                  <div class="item-wrap">
+                    <span>Ru</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </div>
+                </li>
+                <li class="middle-item">
+                  <img
+                    src="images/header/heart.svg"
+                    alt=""
+                    width="28"
+                    height="28"
+                  />
+                  <span>Избранные</span>
+                </li>
+                <li class="middle-item">
+                  <img
+                    src="./images/header/cart.svg"
+                    alt=""
+                    width="32"
+                    height="32"
+                  />
+                  <span>Корзина</span>
+                </li>
+                <li class="middle-item">
+                  <img
+                    src="./images/header/person.svg"
+                    alt=""
+                    width="28"
+                    height="28"
+                  />
+                  <span>Войти</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bottom-wrap">
+            <div class="bottom-content-wrap">
+              <button>
+                <i class="fa-solid fa-bars"></i>
+                Все категории
+              </button>
+              <ul class="bottom-list">
+                <li class="bottom-item">Скидки</li>
+                <li class="bottom-item">Электроника</li>
+                <li class="bottom-item">Бытовая техника</li>
+                <li class="bottom-item">Детям</li>
+                <li class="bottom-item">Ремонт</li>
+                <li class="bottom-item">Дом</li>
+                <li class="bottom-item">Продукты</li>
+                <li class="bottom-item">Для геймеров</li>
+                <li class="bottom-item">Книги</li>
+                <li class="bottom-item">Продавай на Vodiy</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-      <nav></nav>
     </header>
-    <main></main>
+    <main>
+      <section class="credit-section">
+        <div class="container">
+          <div class="credit">
+            <div class="credit-content">
+              <h1>1 Получите кредит на покупку сегодня.</h1>
+              <p>
+                И нет сомнений, что элементы политического процесса и по сей.
+              </p>
+            </div>
+            <div class="credit-content">
+              <h1>2 Lorem ipsum dolor sit amet.</h1>
+              <p>
+                И нет сомнений, что элементы политического процесса и по сей.
+              </p>
+            </div>
+            <div class="credit-content">
+              <h1>3 Lorem ipsum dolor sit amet.</h1>
+              <p>
+                И нет сомнений, что элементы политического процесса и по сей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="gadget-section">
+        <div class="container">
+          <div class="gadget">
+            <div class="gadget-content">
+              <p class="gadget-text">Гаджеты, ноутбуки и не только</p>
+              <span
+                >смотреть все
+                <i class="fa-solid fa-chevron-right"></i>
+              </span>
+            </div>
+            <ul class="gadget-list">
+              <li>
+                <img src="images/gadget/iphone X.jpg" alt="" />
+              </li>
+              <li>
+                <img src="images/gadget/tv.jpg" alt="" />
+              </li>
+              <img src="images/gadget/notebook.jpg" alt="" />
+              <li>
+                <img src="images/gadget/airpods.jpg" alt="" />
+              </li>
+              <li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section> -->
+    </main>
   </body>
   <script src="./js/main.js"></script>
 </html>
