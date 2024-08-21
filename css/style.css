@@ -15,7 +15,7 @@
   width: 100%;
   top: 0;
   background-color: #fff;
-  z-index: 5;
+  z-index: 100;
   box-shadow: 0px 6px 20px 0px #1a151514;
   margin-bottom: 36px;
 }
@@ -341,8 +341,10 @@ form > img:hover {
 /*  */
 /* maybe-section */
 
-.maybe-section {
+.maybe-section,
+.interest-section {
   margin: 0 20px;
+  margin-bottom: 70px;
 }
 .maybe-content {
   padding: 0 20px;
@@ -396,22 +398,154 @@ form > img:hover {
 }
 
 /* maybe-list start*/
+
+.maybe-warp--margin {
+  margin-bottom: 40px;
+}
 .maybe-list {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
+.maybe-item {
+  max-width: 210px;
+}
+.maybe-item > strong {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 5px;
+}
+.maybe-item > span {
+  font-family: "  SF Pro Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #19141480;
+  text-decoration: line-through;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.maybe-item > p {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #191414bf;
+  margin-bottom: 10px;
+}
+
+.btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.cart-btn > svg {
+  margin-right: 12px;
+}
+.cart-btn {
+  background-color: #1db954;
+  width: 138px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.like-btn {
+  background-color: #1db954;
+  width: 56px;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  color: #fff;
+}
+.cart-btn:hover,
+.like-btn:hover {
+  cursor: pointer;
+}
 /* maybe-list end*/
 
-/* maybe-slick */
+/* section start */
+.interest-section {
+  margin-bottom: 40px;
+}
+/* section end */
 
-/*  */
 /* discount-section start */
-
+.discount-section {
+  /* padding: 0 20px; */
+  margin-bottom: 40px;
+}
 .discount {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 15px;
 }
+
 /* discount-section end */
+
+.interest-section--margin {
+  margin-bottom: 100px;
+}
+
+/* news-section */
+.news-section {
+  margin: 0 20px;
+  margin-bottom: 100px;
+}
+.news-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.news-text {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+.news-content > span {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.09px;
+  text-align: left;
+}
+.news-content > span > i {
+  font-size: 12px;
+}
+
+.news-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* brand-section */
+.brand-section {
+  padding: 0 20px;
+}
+.brand-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.brand-text {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+}
+.brand-content > span {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.09px;
+  text-align: left;
+}
+.brand-content > span > i {
+  font-size: 12px;
+}
