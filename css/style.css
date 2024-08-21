@@ -209,11 +209,12 @@ form > img:hover {
 /* credit-section */
 
 .credit-section {
-  background-image: url("../images/credit/back-img-iphones.png");
+  background-image: url("../images/credit/back-img-iphones.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
-  height: 60vh;
+  /* height: 60vh; */
+  height: 440px;
 
   position: relative;
   margin-bottom: 70px;
@@ -262,6 +263,7 @@ form > img:hover {
   width: 12px;
   height: 12px;
   content: none;
+  color: transparent;
 }
 #slick-slide-control00:hover,
 #slick-slide-control01:hover,
@@ -274,22 +276,33 @@ form > img:hover {
   content: "";
   right: 25px;
   top: 75%;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  border: none;
 }
 .slick-next:hover,
 .slick-prev:hover {
   cursor: pointer;
 }
 .slick-prev {
-  /* have a bug scrolling */
   position: absolute;
   content: "";
   left: 25px;
   top: 75%;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  border: none;
+  z-index: 10;
 }
 
 /*  */
 /* gadet section */
 
+.gadget-section {
+  margin-bottom: 70px;
+}
 .gadget {
   padding: 0 20px;
 }
@@ -297,6 +310,7 @@ form > img:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 .gadget-text {
   font-size: 32px;
@@ -310,6 +324,10 @@ form > img:hover {
   color: #191414;
   font-family: "SF Pro Display", sans-serif;
 }
+.gadget-content > span:hover,
+.maybe-content > span {
+  cursor: pointer;
+}
 .gadget-content > span > i {
   font-size: 13px;
 }
@@ -319,3 +337,81 @@ form > img:hover {
   align-items: center;
   justify-content: space-between;
 }
+
+/*  */
+/* maybe-section */
+
+.maybe-section {
+  margin: 0 20px;
+}
+.maybe-content {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+.maybe-content > span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #191414;
+  font-family: "SF Pro Display", sans-serif;
+}
+.maybe-content > span > i {
+  font-size: 13px;
+}
+.maybe-text {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "SF Pro Text", sans-serif;
+}
+
+.maybe-top-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.maybe-top-item:first-child > button {
+  background-color: #1db954;
+  border-radius: 4px;
+  padding: 12px 16px;
+  border: none;
+  color: #fff;
+  font-family: "SF Pro Text", sans-serif;
+}
+
+.maybe-top-item > button {
+  background-color: #1db95433;
+  border-radius: 4px;
+  padding: 12px 16px;
+  border: none;
+  color: #191414;
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.maybe-top-item > button:hover {
+  cursor: pointer;
+}
+
+/* maybe-list start*/
+.maybe-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* maybe-list end*/
+
+/* maybe-slick */
+
+/*  */
+/* discount-section start */
+
+.discount {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+/* discount-section end */
