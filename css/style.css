@@ -687,3 +687,8 @@ form > img:hover {
   font-family: "SF Pro Display", sans-serif;
   font-size: 10px;
 }
+
+.play-market:hover,
+.app-store:hover {
+  cursor: pointer;
+}
