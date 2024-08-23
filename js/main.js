@@ -11,3 +11,8 @@ $(document).ready(function () {
 //     dots: false
 //   });
 // });
+
+const item = document.querySelector(".go-to-item");
+const img = document.querySelector(".go-to-img");
+
+function first() {}

@@ -524,9 +524,15 @@ form > img:hover {
   align-items: center;
   justify-content: space-between;
 }
+
+.go-to-img {
+  display: none;
+}
+
 /* brand-section */
 .brand-section {
   padding: 0 20px;
+  margin-bottom: 200px;
 }
 .brand-content {
   display: flex;
@@ -548,4 +554,136 @@ form > img:hover {
 }
 .brand-content > span > i {
   font-size: 12px;
+}
+
+/*  */
+/* app-section */
+
+.app-section {
+  margin: 0 20px;
+  margin-bottom: 200px;
+}
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app-content {
+  width: 553px;
+}
+.app-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+}
+.app-title > span {
+  display: inline-block;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #1db954;
+}
+
+/* app-section */
+
+.app-wrap {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* service-section */
+
+.service-section {
+  margin: 0 20px;
+  margin-bottom: 200px;
+}
+.service {
+  display: flex;
+  /* align-items: center; */
+}
+.service-content {
+  width: 386px;
+  margin-right: 79px;
+}
+.service-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.service-list {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+.service-item {
+  width: 286px;
+  height: 200px;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: -6px 12px 44px 2px #0000000f;
+}
+.service-item:hover {
+  box-shadow: -12px 32px 34px 0px #0000001a;
+  cursor: pointer;
+}
+.service-item > img {
+  margin-bottom: 19px;
+}
+.service-text {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+.service-text > span {
+  color: #1db954;
+}
+
+/*  */
+/* footer */
+
+.site-footer {
+  background-color: #1db954;
+  /* padding: 0 20px; */
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0 17px 20px;
+  /* padding: 0 20px; */
+
+  border-bottom: 0.5px solid #fff;
+  /* padding-bottom: 40px; */
+}
+.footer-item > a {
+  font-family: "SF Pro Text", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #f9f9f9;
+}
+
+.footer-wrap {
+  padding: 15px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.left-wrap > p {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.privacy-wrap {
+  width: 265px;
+  text-align: end;
+}
+
+.privacy-wrap > p {
+  color: #f9f9f9;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 10px;
 }
