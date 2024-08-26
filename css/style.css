@@ -35,10 +35,56 @@ nav {
 .location-text {
   margin-right: 30px;
 }
+
+.language-folder {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+  transition: all 0.4s;
+}
+.language-folder:hover > .drop-down {
+  height: auto;
+}
+.language-folder:hover {
+  cursor: pointer;
+}
 .language-text {
   margin-right: 5px;
 }
 
+.drop-down {
+  position: absolute;
+  width: 150%;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+
+  top: 16px;
+  left: -18px;
+
+  box-shadow: -6px 6px 30px 0px #19141433;
+}
+.currency {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  color: #000;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.currency:hover {
+  border-radius: 5px;
+  background-color: #fff;
+  color: #208f47;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
 .right-content {
   display: flex;
   align-items: center;
@@ -128,7 +174,7 @@ form > img:hover {
   display: flex;
 }
 
-/* language */
+/* language btn*/
 
 /*  */
 
@@ -143,23 +189,44 @@ form > img:hover {
 
 .middle-item:first-child {
   position: relative;
-  /* transition: all 0, 4s; */
+  transition: ease 0.9s;
+}
+.language-wrap:hover > .popap-wrap {
+  height: auto;
 }
 .popap-wrap {
   position: absolute;
-  width: 150%;
+  width: 70px;
   height: 0;
   overflow: hidden;
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 10px;
+  top: 52px;
+  left: -21px;
+  z-index: 5;
 }
 .popap-link {
-  display: block;
   width: 100%;
-  padding: 5px;
-  border-radius: 5px;
+  display: block;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #e6ecf2;
+  text-align: center;
+  padding: 2px;
 }
-.popap-link .middle-item > img {
+.popap-link:hover {
+  color: #1db954;
+}
+.popap-link:first-child {
+  padding-top: 2px;
+}
+
+/*  */
+.language-wrap > img {
+  margin-bottom: 4px;
+}
+.middle-list .middle-item > img {
   margin-bottom: 8px;
 }
 
@@ -527,7 +594,7 @@ form > img:hover {
 }
 
 .arrow-maybe-next {
-  right: -34px;
+  right: -20px;
 }
 
 .arrow-maybe-prev {
