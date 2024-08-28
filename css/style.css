@@ -11,12 +11,12 @@
   margin: 0 auto;
 }
 .site-header {
-  position: sticky;
+  /* position: sticky;
   width: 100%;
   top: 0;
   background-color: #fff;
   z-index: 100;
-  box-shadow: 0px 6px 20px 0px #1a151514;
+  box-shadow: 0px 6px 20px 0px #1a151514; */
   margin-bottom: 36px;
 }
 nav {
@@ -259,6 +259,13 @@ form > img:hover {
 .bottom-content-wrap {
   display: flex;
   align-items: center;
+
+  position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  /* box-shadow: 0px 6px 20px 0px #1a151514; */
 }
 .bottom-list {
   display: flex;
@@ -506,6 +513,9 @@ form > img:hover {
   position: relative;
   transform: scale(0.95);
 }
+.maybe-item > img {
+  margin-bottom: 5px;
+}
 
 .maybe-item > strong {
   font-family: "SF Pro Display", sans-serif;
@@ -569,6 +579,7 @@ form > img:hover {
   align-items: center;
   justify-content: center;
   color: #fff;
+  transition: all 0.2s;
 }
 .like-btn {
   background-color: #1db954;
@@ -577,10 +588,12 @@ form > img:hover {
   border-radius: 4px;
   padding: 12px 16px;
   color: #fff;
+  transition: all 0.2s;
 }
 .cart-btn:hover,
 .like-btn:hover {
   cursor: pointer;
+  opacity: 0.4;
 }
 
 /* slick carusel maybe list */
@@ -658,9 +671,38 @@ form > img:hover {
   align-items: center;
   justify-content: space-between;
 }
-
+.go-to-item {
+  position: relative;
+  transition: all ease-in-out 0.4s;
+}
+/* .go-to-item:hover {
+  cursor: initial;
+} */
+.go-to-item:hover > .go-to-img {
+  opacity: 1;
+  transition: all ease-in-out 0.5s;
+}
 .go-to-img {
-  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  left: 25%;
+  right: 25%;
+  margin: auto;
+
+  width: 155px;
+  height: 70px;
+  text-align: center;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 22px;
+  font-weight: 500;
+}
+.go-to-img:hover {
+  cursor: pointer;
 }
 
 /* brand-section */
@@ -738,7 +780,8 @@ form > img:hover {
   /* align-items: center; */
 }
 .service-content {
-  width: 386px;
+  /* width: 386px; */
+  width: 30%;
   margin-right: 79px;
 }
 .service-title {
@@ -747,14 +790,17 @@ form > img:hover {
   font-weight: 600;
 }
 
+.service-wrap {
+  width: 60%;
+}
 .service-list {
   display: flex;
   align-items: center;
   gap: 29px;
 }
 .service-item {
-  width: 286px;
-  height: 200px;
+  min-width: 320px;
+  min-height: 200px;
   border-radius: 8px;
   padding: 25px;
   box-shadow: -6px 12px 44px 2px #0000000f;

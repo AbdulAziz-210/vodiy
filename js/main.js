@@ -17,7 +17,25 @@ $(document).ready(function () {
   });
 });
 
-// const item = document.querySelector(".go-to-item");
-// const img = document.querySelector(".go-to-img");
+// $(document).ready(function () {
+//   $(".service-list").slick({
+//     dots: true,
+//     nextArrow: `<button class="slick-next slick-arrow"><i class="fa-solid fa-chevron-right"></i></button>`,
+//     prevArrow: `<button class="slick-prev slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>`
+//   });
+// });
 
-// function first() {}
+// $(document).ready(function () {
+//   $(".service-list").slick({
+//     // dots: true,
+//     arrows: false,
+//     slidesToShow: 3,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//     autoplaySpeed: 1000,
+//     // infinite: true,
+
+//     nextArrow: `<button class="slick-next slick-arrow"><i class="fa-solid fa-chevron-right"></i></button>`,
+//     prevArrow: `<button class="slick-prev slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>`
+//   });
+// });
