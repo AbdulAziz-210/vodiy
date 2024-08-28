@@ -39,3 +39,19 @@ $(document).ready(function () {
 //     prevArrow: `<button class="slick-prev slick-arrow"><i class="fa-solid fa-chevron-left"></i></button>`
 //   });
 // });
+
+//
+//
+//
+
+var stickyEl = new Sticksy(".bottom-wrap");
+// you can handle state changing
+
+stickyEl.onStateChanged = function (state) {
+  console.log(state);
+  if (state === "stuck") {
+    stickyEl.nodeRef.classList.add("widget--sticky");
+  } else {
+    stickyEl.nodeRef.classList.remove("widget--sticky");
+  }
+};

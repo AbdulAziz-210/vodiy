@@ -20,7 +20,8 @@
   margin-bottom: 36px;
 }
 nav {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
+  height: 100%;
 }
 .top-wrap {
   display: flex;
@@ -241,6 +242,16 @@ form > img:hover {
   align-items: center;
 }
 
+.bottom-wrap {
+  /* position: sticky;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
+  height: 100%;
+  box-shadow: 0px 6px 20px 0px #1a151514; */
+}
+
 .bottom-wrap > div > button {
   background-color: #1db954;
   border: none;
@@ -253,19 +264,24 @@ form > img:hover {
 .bottom-wrap > div > button:hover {
   cursor: pointer;
 }
+
+.bottom-wrap.widget--sticky {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 100%;
+  right: 0;
+  background-color: white;
+  z-index: 9999;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .fa-bars {
   margin-right: 5px;
 }
 .bottom-content-wrap {
   display: flex;
   align-items: center;
-
-  position: sticky;
-  width: 100%;
-  top: 0;
-  background-color: #fff;
-  z-index: 100;
-  /* box-shadow: 0px 6px 20px 0px #1a151514; */
 }
 .bottom-list {
   display: flex;
@@ -503,10 +519,6 @@ form > img:hover {
   margin-bottom: 40px;
 }
 .maybe-list {
-  /* display: flex;
-  align-items: center;
-  justify-content: space-around;
-  overflow: hidden; */
   position: relative;
 }
 .maybe-item {
@@ -780,8 +792,8 @@ form > img:hover {
   /* align-items: center; */
 }
 .service-content {
-  /* width: 386px; */
-  width: 30%;
+  width: 386px;
+  /* width: 30%; */
   margin-right: 79px;
 }
 .service-title {
@@ -790,17 +802,17 @@ form > img:hover {
   font-weight: 600;
 }
 
-.service-wrap {
+/* .service-wrap {
   width: 60%;
-}
+} */
 .service-list {
   display: flex;
   align-items: center;
   gap: 29px;
 }
 .service-item {
-  min-width: 320px;
-  min-height: 200px;
+  width: 286px;
+  height: 200px;
   border-radius: 8px;
   padding: 25px;
   box-shadow: -6px 12px 44px 2px #0000000f;
