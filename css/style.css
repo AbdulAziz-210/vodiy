@@ -273,8 +273,7 @@ form > img:hover {
   right: 0;
   background-color: white;
   z-index: 9999;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0 5px 0;
 }
 .fa-bars {
   margin-right: 5px;

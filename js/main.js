@@ -44,14 +44,31 @@ $(document).ready(function () {
 //
 //
 
-var stickyEl = new Sticksy(".bottom-wrap");
-// you can handle state changing
+// var stickyEl = new Sticksy(".bottom-wrap");
+// // you can handle state changing
 
-stickyEl.onStateChanged = function (state) {
-  console.log(state);
-  if (state === "stuck") {
-    stickyEl.nodeRef.classList.add("widget--sticky");
-  } else {
-    stickyEl.nodeRef.classList.remove("widget--sticky");
-  }
-};
+// stickyEl.onStateChanged = function (state) {
+//   console.log(state);
+//   if (state === "stuck") {
+//     stickyEl.nodeRef.classList.add("widget--sticky");
+//   } else {
+//     stickyEl.nodeRef.classList.remove("widget--sticky");
+//   }
+// };
+
+// $(".owl-carousel").owlCarousel({
+//   loop: true,
+//   margin: 10,
+//   nav: true,
+//   responsive: {
+//     0: {
+//       items: 1
+//     },
+//     600: {
+//       items: 3
+//     },
+//     1000: {
+//       items: 5
+//     }
+//   }
+// });
