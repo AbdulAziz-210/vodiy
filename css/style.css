@@ -242,16 +242,6 @@ form > img:hover {
   align-items: center;
 }
 
-.bottom-wrap {
-  /* position: sticky;
-  width: 100%;
-  top: 0;
-  background-color: #fff;
-  z-index: 9999;
-  height: 100%;
-  box-shadow: 0px 6px 20px 0px #1a151514; */
-}
-
 .bottom-wrap > div > button {
   background-color: #1db954;
   border: none;
@@ -320,6 +310,114 @@ form > img:hover {
 .bottom-item:hover::before {
   left: 0;
 }
+
+/*  */
+/*  */
+/*  */
+
+.category-general-wrap {
+  display: flex;
+  background-color: #fff;
+}
+
+.aside-list {
+  margin: 30px 20px 40px 60px;
+}
+.aside-item:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1db954;
+  color: #fff;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  width: 400px;
+  border-radius: 8px;
+  padding: 16px 18px 16px 12px;
+}
+.item-wrap {
+  display: flex;
+  align-items: center;
+}
+.item-wrap > img {
+  padding-right: 12px;
+}
+
+.aside-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  color: #000000;
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  width: 400px;
+  border-radius: 8px;
+  padding: 16px 18px 16px 12px;
+  margin-bottom: 5px;
+}
+.aside-item:hover {
+  cursor: pointer;
+}
+
+/*  */
+/*  */
+/*  */
+.category-folder {
+  margin-top: 38px;
+  margin: 38px 1px 1px 40px;
+}
+.category-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.smartphone-item {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.smartohone-title {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1db954;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.smartohone-text {
+  font-family: "SF Pro Display", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #191414bf;
+}
+.smartphone-item:nth-child(6) > .smartohone-text {
+  color: #1db954;
+}
+.collapse {
+  color: #19141480;
+  margin-right: 5px;
+}
+.smartphone-item:last-child:hover {
+  cursor: pointer;
+}
+
+/*  */
+/*  */
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 
 /* credit-section */
 
